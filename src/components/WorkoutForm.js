@@ -13,7 +13,7 @@ const WorkoutForm = () => {
         const workout = {title, load, reps}
         console.log(workout);
         
-        const response = await fetch('/api/workouts', {
+        const response = await fetch('https://workout-pal-mern.vercel.app/api/workouts', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(workout)
