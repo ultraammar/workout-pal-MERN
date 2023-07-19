@@ -5,7 +5,7 @@ const WorkoutDetails = ({workout}) => {
 
     const handleDelete = async () => {
         
-        const response = await fetch('https://workout-pal-mern.vercel.app/api/workouts/' + workout._id, {
+        const response = await fetch('https://workout-pal-mern-backend.vercel.app/api/workouts/' + workout._id, {
             method: 'DELETE'
         })
         const json = await response.json();
