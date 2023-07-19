@@ -5,7 +5,7 @@ module.exports = function(app) {
     '/api',
     createProxyMiddleware({
       // target: 'http://localhost:4000',
-      target: 'https://workout-pal-mern-backend.vercel.app',
+      target: 'workout-pal-mern-backend.vercel.app',
       changeOrigin: true,
     })
   );
